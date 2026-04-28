@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - NGO Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌱 NGO Connect</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+    i><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section id="dashboardContent"></section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>Contact: <a href="mailto:info@ngoconnect.org">info@ngoconnect.org</a></div>
+      <div class="socials">
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+      </div>
+      <div>&copy; 2026 NGO Connect. All rights reserved.</div>
+    </div>
+  </footer>
+  </body>
+  <script type="module" src="script.js"></script>
+
+
+</html>
+
+<body onload="loadDashboard()">

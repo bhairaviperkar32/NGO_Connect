@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - NGO Connect</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">🌱 NGO Connect</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a class="active" href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="form-section">
+
+    <!-- ROLE -->
+    <div>
+      <label>
+        <input type="radio" name="role" id="volunteerTab" checked />
+        Volunteer
+      </label>
+
+      <label>
+        <input type="radio" name="role" id="ngoTab" />
+        NGO
+      </label>
+    </div>
+
+    <!-- VOLUNTEER FORM -->
+    <form id="volunteerForm" class="form-card">
+
+      <h2>Volunteer Register</h2>
+
+      <input type="email" id="volEmail" placeholder="Email" required />
+      <input type="password" id="volPassword" placeholder="Password" required />
+      <input type="text" id="volName" placeholder="Name" required />
+      <input type="text" id="volPhone" placeholder="Phone" required />
+
+      <button type="button" class="btn-primary" onclick="registerVolunteer()">
+        Register Volunteer
+      </button>
+
+    </form>
+
+    <!-- NGO FORM -->
+    <form id="ngoForm" class="form-card hidden">
+
+      <h2>NGO Register</h2>
+
+      <input type="email" id="ngoEmail" placeholder="Email" required />
+      <input type="password" id="ngoPassword" placeholder="Password" required />
+      <input type="text" id="ngoName" placeholder="NGO Name" required />
+      <input type="text" id="ngoAddress" placeholder="Address" required />
+      <input type="text" id="ngoPhone" placeholder="Phone" required />
+
+      <button type="button" class="btn-primary" onclick="registerNGO()">
+        Register NGO
+      </button>
+
+    </form>
+
+  </section>
+</main>
+</body>
+<script type="module" src="script.js"></script>
+
+
+</html>
